@@ -9,20 +9,16 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Clocks App"),
+        title: Text("Clocks"),
         centerTitle: false,
         backgroundColor: Colors.yellow[800],
       ),
       body: Center(
-          child: ElevatedButton.icon(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
-              icon: Icon(Icons.mail, color: Colors.black),
-              label: const Text(
-                "Contact Me",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-              ))),
+        child: Image(
+          // image: NetworkImage("https://picsum.photos/1000/1000"),
+          image: AssetImage("assets/pic1.jpg"),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: null,
         child: Icon(
